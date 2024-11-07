@@ -1,0 +1,563 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>W3.CSS Template</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <!-- Add icon library -->
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+        <!-- Add w3schools library -->
+        <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+        <link rel="stylesheet" href="https://www.w3schools.com/lib/w3-theme-black.css">
+        <style>
+            .a-hover:hover{
+                background-color: #e5f7f9;
+            }
+
+  .btn {
+    background-color: #000;
+    border: none;
+    color: #fff;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 16px;
+  }
+  
+  /* Darker background on mouse-over */
+  .btn:hover {
+    background-color: #54b8c0;
+  }
+        </style>
+    </head>
+    <body id="myPage">
+        <!-- Sidebar on click -->
+        <nav class="w3-sidebar w3-bar-block w3-white w3-card w3-animate-left w3-large" style="display:none;z-index:2" id="mySidebar">
+            <a href="javascript:void(0)" onclick="w3_close()" class="w3-bar-item w3-button w3-display-topright w3-text-teal">
+                Close
+                <i class="fa fa-remove"></i>
+            </a>
+            <h6 class="w3-bar-item">More Projects:</h6>
+            <a href="https://www.digitaling.com/projects/116570.html" class="w3-bar-item w3-button w3-medium">Wake up, shōnen!</a>
+            <a href="https://www.digitaling.com/projects/159508.html" class="w3-bar-item w3-button w3-medium">Anipop x Pac-Man: beat the monsters!</a>
+            <a href="https://www.digitaling.com/projects/119174.html" class="w3-bar-item w3-button w3-medium">JD Logistics Recycle Day: Small Efforts, Big Changes</a>
+            <a href="https://www.digitaling.com/projects/130059.html" class="w3-bar-item w3-button w3-medium">Mini Film "The Old Man and Hi": Capturing Your Moments</a>
+        </nav>
+        <!-- Navbar  -->
+        <nav class="w3-top">
+            <div class="w3-bar w3-theme-d2 w3-left-align">
+                <a class="w3-bar-item w3-button w3-hide-medium w3-hide-large w3-right w3-hover-white w3-theme-d2" href="javascript:void(0);" onclick="openNav()">
+                    <i class="fa fa-bars"></i>
+                </a>
+                <a href="#" class="w3-bar-item w3-button" style="background-color:#54b8c0;">
+                    <i class="fa fa-home w3-margin-right"></i>
+                    Home
+                </a>
+                <a href="#about" class="w3-bar-item w3-button w3-hide-small w3-hover-white">About Me</a>
+                <div class="w3-dropdown-hover w3-hide-small">
+                    <button class="w3-button a-hover" title="Notifications">
+                        Projects
+                        <i class="fa fa-caret-down"></i>
+                    </button>
+                    <div class="w3-dropdown-content w3-card-4 w3-bar-block">
+                        <a href="#events" class="w3-bar-item w3-button">Social Events</a>
+                        <a href="#videos" class="w3-bar-item w3-button">Videos</a>
+                        <a href="#copies" class="w3-bar-item w3-button">Copies</a>
+                    </div>
+                </div>
+                <a href="#skills" class="w3-bar-item w3-button w3-hide-small w3-hover-white">Skills</a>
+                <a href="#services" class="w3-bar-item w3-button w3-hide-small w3-hover-white">Services</a>
+                <a href="#contact" class="w3-bar-item w3-button w3-hide-small w3-hover-white">Contact</a>
+                
+            </nav>
+            <!-- Navbar on small screens -->
+            <div id="navDemo" class="w3-bar-block w3-theme-d2 w3-hide w3-hide-large w3-hide-medium">
+                <a href="#" class="w3-bar-item w3-button">Home</a>
+                <a href="#about" class="w3-bar-item w3-button">About Me</a>
+                <a href="#events" class="w3-bar-item w3-button">Projects</a>
+                <a href="#services" class="w3-bar-item w3-button">Services</a>
+                <a href="#contact" class="w3-bar-item w3-button">Contact</a>
+            </div>
+        </div>
+        <!-- Image Header -->
+        <div class="w3-display-container w3-animate-opacity">
+            <img src="/imgs/sloganBanner.webp" alt="slogan banner" style="width:100%;min-height:350px;max-height:600px;margin-top:36px;object-fit:cover;">
+            <div class="w3-container w3-display-bottomright w3-margin-bottom">
+                <a href="/LiLing's Resume.pdf" download>
+                    <button class="btn">
+                        <i class="fa fa-download"></i>
+                        Download CV
+                    </button>
+                </a>
+            </div>
+        </div>
+        <!-- About Company Container -->
+        <div class="w3-container">
+            <div class="w3-content" style="max-width:700px">
+                <h5 class="w3-center w3-padding-64">
+                    <span class="w3-tag w3-wide">ABOUT THE COMPANY</span>
+                </h5>
+                <p>
+                    Yes, our company is called "You're Right", and our slogan is "We'll Think Again". We are a creative agency based in Beijing, 
+                    specializing in unconventional marketing strategies. Our strength lies in transforming brand messages into fun, shareable 
+                    content that resonates with audiences and embeds brand memory in their minds.
+                    <p>
+                        We believe that the client-provider relationship should be a mutual connection based on trust and understanding. We seek 
+                    "like-minded" clients who share our vision, where collaboration is joyful, and each project becomes a case others are 
+                    excited to applaud.
+                    </p>
+                    <!-- w3-light-gray -->
+                    <div class="w3-panel w3-leftbar " style="background-color:#e5f7f9;">
+                        <p>
+                            <i style="color:#54b8c0;">"Creativity is best when it surprises - crafted with care, sparked at just the right moment.</i>
+                        </p>
+                        <p style="color:#54b8c0;">Creative Director and CEO: Lao Ban</p>
+                    </div>
+                    <img src="imgs/companyPortraits.webp" style="width:100%;max-width:1000px" class="w3-margin-top">
+                    <p>
+                        <strong>Available hours:</strong>
+                        everyday from 10am to 6pm.
+                    </p>
+                    <p>
+                        <strong>Address:</strong>
+                        1119 Guanghua SOHO, Beijing
+                    </p>
+                </div>
+            </div>
+            <!-- About Me Container -->
+            <div class="w3-container w3-center" id="about">
+                <!-- Use 'w3-padding-64' to give a reasonable gap between <h5> and <p> -->
+                <h5 class="w3-center w3-padding-64">
+                    <span class="w3-tag w3-wide">ABOUT ME</span>
+                </h5>
+                <p>Copywriter with 5 Years' Experience&#9825;</p>
+                <div class="w3-row">
+                    <br>
+                    <div class="w3-center w3-padding-large">
+                        <img
+                            src="/imgs/companyLogo.webp"
+                            alt="Professional Photo Li Ling"
+                            style="width:90px"
+                            class="w3-circle w3-hover-opacity"
+                        >
+                        <h3>Li Ling</h3>
+                        <p>
+                            I bring concepts to life through compelling
+                            <br>
+                            storytelling and strategic creativity.
+                        </p>
+                        <br>
+                        <br>
+                    </div>
+                </div>
+            </div>
+            <!-- Social Events Container -->
+            <div class="w3-row-padding w3-padding-64" id="events" style="background-color:#e5f7f9;">
+                <div class="w3-quarter">
+                    <h2>Social Topics Launched</h2>
+                    <p>
+                        Driven by a passion for the advertising and public relations industry, I focus on
+                         designing impactful social topic strategies that spark conversation and connect 
+                         with audiences.
+                    </p>
+                    <p>
+                        From uncovering valuable insights to crafting shareable, engaging narratives, I manage
+                         the entire process—starting with concept ideation and strategic planning, all the way 
+                         through to creative execution and final case study packaging.
+                    </p>
+                </div>
+                <div class="w3-quarter">
+                    <div class="w3-card w3-white">
+                        <img src="imgs/project1.webp" alt="Snow" style="width: 100%;height:200px;object-fit: cover;">
+                        <div class="w3-container">
+                            <h4 style="font-weight: 400;font-style: italic;">#Hired for "Being the Campus Heartthrob"#</h4>
+                            <h5>Campaign For a Talent Show</h5>
+                            <p>
+                                In May the job-hunting season, a resume titled "I'm the Campus Heartthrob" backed by a Top 10 spot
+                                 in SOHU's National "Campus Heartthrob Contest", went viral on Weibo, reaching 220M views and
+                                  ranking #4.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="w3-quarter">
+                    <div class="w3-card w3-white">
+                        <img src="imgs/project2.webp" alt="Snow" style="width: 100%;height:200px;object-fit: cover;">
+                        <div class="w3-container">
+                            <h4 style="font-weight: 400;font-style: italic;">#Free Bento Here#</h4>
+                            <h5>A Health Reminder for Night Owls</h5>
+                            <p>
+                                For Alipay's mutual aid anniversary, we gave late-night workers in Beijing free bentos, each with a "Book of Answers" capturing 100 long-term patients' stories. Filmed in a mini-documentary, it gained 110M views, raising awareness of the mutual aid platform.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="w3-quarter">
+                    <div class="w3-card w3-white">
+                        <img src="imgs/project3.webp" alt="Snow" style="width: 100%;height:200px;object-fit: cover;">
+                        <div class="w3-container">
+                            <h4 style="font-weight: 400;font-style: italic;">
+                                #72-Year-Old Farmer Wants To Be A Designer#:
+                            </h4>
+                            <h5>JD.com Makes Your Dream Affordable</h5>
+                            <p>
+                                This topic sparked a "passion" dialogue, reaching 25.07M viewers and drawing attention to JD.com's special seasonal discounts on digital devices.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Commercial Videos Section -->
+            <div id="videos" class="w3-container w3-margin-top" style="padding: 5%;">
+                <!-- <h2>My Projects</h2> -->
+                <h3 class="w3-right-align">"Alienware: Gaming on the Alien's Level"</h3>
+                <h6 class="w3-right-align">
+                    A
+                    <strong>Rewarded</strong>
+                    Commercial Video
+                </h6>
+                <div class="w3-row-padding w3-text-white w3-large">
+                    <div class="w3-half w3-margin-bottom">
+                        <div class="w3-display-container">
+                            <img src="imgs/video1.gif" alt="Landing" style="width:100%;">
+                            <span class="w3-display-bottomleft w3-padding w3-left-align w3-small">
+                                The astronaut gracefully steps off the futuristic "Good Goods" spacecraft onto the moon
+                            </span>
+                        </div>
+                    </div>
+                    <div class="w3-half">
+                        <div class="w3-row-padding" style="margin:0 -16px">
+                            <div class="w3-half w3-margin-bottom">
+                                <div class="w3-display-container">
+                                    <img src="imgs/video3.gif" alt="First Communicate" style="width:100%">
+                                    <span class="w3-display-bottomleft w3-padding w3-left-align w3-small">
+                                        A Marilyn Monroe photo fails to communicate with the alien
+                                    </span>
+                                </div>
+                            </div>
+                            <div class="w3-half w3-margin-bottom">
+                                <div class="w3-display-container">
+                                    <img src="imgs/video4.gif" alt="San Francisco" style="width:100%">
+                                    <span class="w3-display-bottomleft w3-padding w3-left-align w3-small">
+                                        His Bruce Lee nunchuck display backfires
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="w3-row-padding" style="margin:0 -16px">
+                            <div class="w3-half w3-margin-bottom">
+                                <div class="w3-display-container">
+                                    <img src="imgs/video5.gif" alt="Pisa" style="width:100%">
+                                    <span class="w3-display-bottomleft w3-padding w3-left-align w3-small">
+                                        The alien reaches out to the 'Alienware' device, reminiscent of the iconic E.T. scene
+                                    </span>
+                                </div>
+                            </div>
+                            <div class="w3-half w3-margin-bottom">
+                                <div class="w3-display-container">
+                                    <img src="imgs/video6.gif" alt="Paris" style="width:100%">
+                                    <span class="w3-display-bottomleft w3-padding w3-left-align w3-small">
+                                        The astronaut and alien dive into gaming, ignoring Earth's calls
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Container -->
+            <div class="w3-container" style="position:relative">
+                <a onclick="w3_open()" class="w3-button w3-xlarge w3-circle" style="position:absolute;top:-28px;right:24px;background-color:#54b8c0;color: #fff;">+</a>
+            </div>
+            <!-- My Skills Section -->
+            <section class="w3-row-padding w3-center w3-padding-64 container" id="skills" style="max-width:800px; margin: auto;">
+                <h2>MY SKILLS</h2>
+                <p class="w3-wide w3-left-align">Creative Copywriting</p>
+                <div class="w3-light-grey">
+                    <div class="w3-container w3-center w3-padding-small" style="width:95%;background-color:#54b8c0;color:#fff;">95%</div>
+                </div>
+                <p class="w3-wide w3-left-align">Social Topic Launched</p>
+                <div class="w3-light-grey">
+                    <div class="w3-container w3-center w3-padding-small" style="width:85%;background-color:#54b8c0;color:#fff;">85%</div>
+                </div>
+                <p class="w3-wide w3-left-align">Brand Storytelling</p>
+                <div class="w3-light-grey">
+                    <div class="w3-container w3-center w3-padding-small" style="width:80%;background-color:#54b8c0;color:#fff;">80%</div>
+                </div>
+                <br>
+                <div class="w3-row w3-center w3-padding-16 w3-section" style="background-color: #e5f7f9;">
+                    <div class="w3-quarter w3-section">
+                        <span class="w3-xlarge">5+</span>
+                        <br>
+                        Industrial Awards
+                    </div>
+                    <div class="w3-quarter w3-section">
+                        <span class="w3-xlarge">12+</span>
+                        <br>
+                        Long-Term Clients
+                    </div>
+                    <div class="w3-quarter w3-section">
+                        <span class="w3-xlarge">36+</span>
+                        <br>
+                        Successful Brands
+                    </div>
+                    <div class="w3-quarter w3-section">
+                        <span class="w3-xlarge">99+</span>
+                        <br>
+                        Recognized Cases
+                    </div>
+                </div>
+            </section>
+            <!--  -->
+            <!-- Service & Pricing Section -->
+            <div class="w3-row-padding w3-center w3-padding-64" id="services">
+                <h2>SERVICES</h2>
+                <p>Choose a pricing plan that fits your needs!</p>
+                <br>
+                <div class="w3-third w3-margin-bottom">
+                    <ul class="w3-ul w3-border w3-hover-shadow">
+                        <li class="">
+                            <p class="w3-large">
+                                Essential Copywriting
+                            </p>
+                        </li>
+                        <li class="w3-padding-16">
+                            <b>100%</b>
+                            human writing
+                        </li>
+                        <li class="w3-padding-16">
+                            <b>100%</b>
+                            money-back guarantee
+                        </li>
+                        <li class="w3-padding-16">
+                            <b>Native</b>
+                            English-speaking writers
+                        </li>
+                        <li class="w3-padding-16">
+                            <b>SEO-optimized</b>
+                            content
+                        </li>
+                        <li class="w3-padding-16">
+                            <h2 class="w3-wide">
+                                <i class="fa fa-usd"></i>
+                                400
+                            </h2>
+                            <span class="w3-opacity">per copy</span>
+                        </li>
+                        <li class="w3-theme-l5 w3-padding-24">
+                            <button class="w3-button w3-padding-large" style="background-color: #54b8c0;color: #fff;">
+                                <i class="fa fa-check"></i>
+                                Sign Up
+                            </button>
+                        </li>
+                    </ul>
+                </div>
+                <div class="w3-third w3-margin-bottom">
+                    <ul class="w3-ul w3-border w3-hover-shadow">
+                        <li class="w3-theme-l2">
+                            <p class="w3-large">Social Media Management</p>
+                        </li>
+                        <li class="w3-padding-16">
+                            <b>Daily</b>
+                            content creation and posting
+                        </li>
+                        <li class="w3-padding-16">
+                            <b>Local</b>
+                            community managers
+                        </li>
+                        <li class="w3-padding-16">
+                            <b>Full</b>
+                            platform optimization
+                        </li>
+                        <li class="w3-padding-16">
+                            <b>Monthly</b>
+                            performance tracking
+                        </li>
+                        <li class="w3-padding-16">
+                            <h2 class="w3-wide">
+                                <i class="fa fa-usd"></i>
+                                2,500
+                            </h2>
+                            <span class="w3-opacity">per month</span>
+                        </li>
+                        <li class="w3-theme-l5 w3-padding-24">
+                            <button class="w3-button w3-padding-large" style="background-color: #54b8c0;color: #fff;">
+                                <i class="fa fa-check"></i>
+                                Sign Up
+                            </button>
+                        </li>
+                    </ul>
+                </div>
+                <div class="w3-third w3-margin-bottom">
+                    <ul class="w3-ul w3-border w3-hover-shadow">
+                        <li class="w3-theme">
+                            <p class="w3-large">Campaign Management</p>
+                        </li>
+                        <li class="w3-padding-16">
+                            <b>Multi</b>
+                            -channel execution
+                        </li>
+                        <li class="w3-padding-16">
+                            <b>Target</b>
+                            audience research
+                        </li>
+                        <li class="w3-padding-16">
+                            <b>Creative</b>
+                            content development
+                        </li>
+                        <li class="w3-padding-16">
+                            <b>30%+</b>
+                            conversion rate
+                        </li>
+                        <li class="w3-padding-16">
+                            <h2 class="w3-wide">
+                                <i class="fa fa-usd"></i>
+                                3,000
+                            </h2>
+                            <span class="w3-opacity">per campaign</span>
+                        </li>
+                        <li class="w3-theme-l5 w3-padding-24">
+                            <button class="w3-button w3-padding-large" style="background-color: #54b8c0;color: #fff;">
+                                <i class="fa fa-check"></i>
+                                Sign Up
+                            </button>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <!-- Contact Container -->
+            <div class="w3-container w3-padding-64" id="contact" style="background-color: #e5f7f9;">
+                <div class="w3-row">
+                    <div class="w3-col m5">
+                        <div class="w3-padding-16">
+                            <span class="w3-xlarge" style="border-bottom: #54b8c0 5px solid">Contact Me</span>
+                        </div>
+                        <h3>Address</h3>
+                        <!-- <p>Swing by for a cup of coffee, or whatever.</p> -->
+                        <p>
+                            <i class="fa fa-map-marker w3-xlarge" style="color: #54b8c0;"></i>
+                            Scarborough, ON
+                        </p>
+                        <p>
+                            <i class="fa fa-phone w3-xlarge" style="color: #54b8c0;"></i>
+                            +1 (416)491-5050
+                        </p>
+                        <p>
+                            <i class="fa fa-envelope-o w3-xlarge" style="color: #54b8c0;"></i>
+                            lling12@myseneca.ca
+                        </p>
+                    </div>
+                    <div class="w3-col m7">
+                        <form class="w3-container w3-card-4 w3-padding-16 w3-white" onsubmit="return showSuccessMessage()">
+                            <div class="w3-section">
+                                <label>First Name</label>
+                                <input
+                                    class="w3-input"
+                                    type="text"
+                                    name="Name"
+                                    required
+                                >
+                            </div>
+                            <div class="w3-section">
+                                <label>Last Name</label>
+                                <input
+                                    class="w3-input"
+                                    type="text"
+                                    name="Name"
+                                    required
+                                >
+                            </div>
+                            <div class="w3-section">
+                                <label>Email</label>
+                                <input
+                                    class="w3-input"
+                                    type="text"
+                                    name="Email"
+                                    required
+                                >
+                            </div>
+                            <div class="w3-section">
+                                <label>Company</label>
+                                <input
+                                    class="w3-input"
+                                    type="text"
+                                    name="Company"
+                                    required
+                                >
+                            </div>
+                            <input
+                                class="w3-check"
+                                type="checkbox"
+                                checked
+                                name="Like"
+                            >
+                            <label>I Like it!</label>
+                            <button type="submit" class="w3-button w3-right w3-theme">Send</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+            <!-- Image of location/map -->
+            <img src="/imgs/torontoSkyline.webp" alt="Toronto City Skyline" class="w3-image w3-greyscale-min w3-brightness-max" style="width:100%;">
+            <!-- Footer -->
+            <footer class="w3-container w3-padding-32 w3-center" style="background-color:#54b8c0;color: #fff;">
+                <h4>Keep In Touch</h4>
+                <a class="w3-button w3-large" href="https://www.facebook.com/" title="Facebook">
+                    <i class="fa fa-facebook"></i>
+                </a>
+                <a class="w3-button w3-large" href="https://www.instagram.com/?hl=en" title="Instagram">
+                    <i class="fa fa-instagram"></i>
+                </a>
+                <a class="w3-button w3-large w3-hide-small" href="https://www.linkedin.com/in/li-ling-a83081268/" title="Linkedin">
+                    <i class="fa fa-linkedin"></i>
+                </a>
+                <p>
+                    Powered by
+                    <a href="https://www.w3schools.com/w3css/default.asp" target="_blank">w3.css</a>
+                </p>
+                <div style="position:relative;bottom:100px;z-index:1;" class="w3-tooltip w3-right">
+                    <span class="w3-text w3-padding w3-hide-small">Go To Top</span>
+                    <a class="w3-button w3-theme" href="#myPage">
+                        <span class="w3-xlarge">
+                            <i class="fa fa-chevron-circle-up"></i>
+                        </span>
+                    </a>
+                </div>
+            </footer>
+            <script>
+// Script for side navigation
+function w3_open() {
+  var x = document.getElementById("mySidebar");
+  x.style.width = "300px";
+  x.style.paddingTop = "10%";
+  x.style.display = "block";
+}
+
+// Close side navigation
+function w3_close() {
+  document.getElementById("mySidebar").style.display = "none";
+}
+
+// Used to toggle the menu on smaller screens when clicking on the menu button
+function openNav() {
+  var x = document.getElementById("navDemo");
+  if (x.className.indexOf("w3-show") == -1) {
+    x.className += " w3-show";
+  } else { 
+    x.className = x.className.replace(" w3-show", "");
+  }
+}
+
+function showSuccessMessage() {
+    // Prompt after submission
+    alert("Submitted!");
+    // Prevent the default submission behaviour
+    return false;
+}
+            </script>
+            <!-- Import jsPDF library -->
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+
+        </body>
+    </html>
